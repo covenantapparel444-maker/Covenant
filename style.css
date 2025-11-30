@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif; /* fallback de Helvetica World */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 480px;
+}
+
+.title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.link {
+  font-size: 1.1rem;
+  padding: 14px 0;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.link:hover {
+  border-color: white;
+  letter-spacing: 1px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fade 1.4s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating effect */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
