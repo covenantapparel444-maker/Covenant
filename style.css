@@ -76,7 +76,7 @@ body {
   max-width: 480px;
 
   /* margen natural para permitir scroll */
-  margin: 100px auto 80px;
+  margin: 60px auto 50px;
 
   opacity: 0;
   animation: reveal 1.5s ease 2.5s forwards;
