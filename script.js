@@ -1,3 +1,4 @@
+// Animación cuando se hace clic en los links
 document.querySelectorAll('.link').forEach(link => {
   link.addEventListener('click', e => {
     link.classList.add('clicked');
@@ -5,6 +6,7 @@ document.querySelectorAll('.link').forEach(link => {
   });
 });
 
-.link.clicked {
-  transform: scale(0.96);
-}
+// Después de la intro, aparece la página
+setTimeout(() => {
+  document.querySelector('.container').classList.remove('hidden');
+}, 2200);
